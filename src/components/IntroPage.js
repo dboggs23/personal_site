@@ -1,6 +1,6 @@
-import React, { useState, ReactDOM, useRef } from 'react'
-import { Link, useHistory } from 'react-router-dom'
-import styled, { keyframes } from 'styled-components'
+import React, { useState } from 'react'
+import { useHistory } from 'react-router-dom'
+import styled from 'styled-components'
 
 const Gradient = styled.div`
 	height: 100vh;
