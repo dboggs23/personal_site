@@ -73,6 +73,8 @@ const GlobalStyles = createGlobalStyle`
     max-width: 100%;
   }
 
+  
+
 `
 
 export default GlobalStyles

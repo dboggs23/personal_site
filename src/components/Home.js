@@ -21,6 +21,11 @@ const HomeStyled = styled.div`
 			opacity: 1;
 		}
 	}
+
+	@media only screen and (max-width: 600px) {
+		width: 250px;
+		margin: 0 auto;
+	}
 `
 
 const Container = styled.div`
@@ -85,6 +90,15 @@ const Container = styled.div`
 		display: flex;
 		justify-content: space-between;
 	}
+
+	@media only screen and (max-width: 600px) {
+		.interests-container {
+			padding: 3px;
+		}
+		.interests {
+			width: 30px;
+		}
+	}
 `
 
 function Home() {
@@ -104,7 +118,7 @@ function Home() {
 					things that make interacting with them nicer.
 				</h5>
 				<div>
-					<h4>Minimalist clip art that represent my interests:</h4>
+					<h5>Minimalist clip art that represent my interests:</h5>
 					<div className='interests-container'>
 						<img
 							className='interests books'
