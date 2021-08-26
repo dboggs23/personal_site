@@ -7,8 +7,8 @@ const Gradient = styled.div`
 	width: 100vw;
 	background: linear-gradient(269deg, #379683, #05386b, #8ee4af);
 	background-size: 600% 600%;
-
 	display: flex;
+	align-content: center;
 	justify-content: center;
 	align-items: center;
 	animation: StartingAnimation 6s infinite;
@@ -50,11 +50,18 @@ const Gradient = styled.div`
 			background-position: 0% 48%;
 		}
 	}
+
+	@media only screen and (max-width: 600px) {
+		.intro {
+			font-size: 4rem;
+		}
+	}
 `
 
 const OpacityContainer = styled.div`
 	height: 100vh;
 	width: 100vw;
+
 	animation: ${(props) => (props.clickedThrough ? 'MaxOpacity 1s 1' : '')};
 	@keyframes MaxOpacity {
 		100% {
